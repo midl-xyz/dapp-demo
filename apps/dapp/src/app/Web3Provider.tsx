@@ -1,7 +1,6 @@
 "use client";
 
 import { midlConfig, queryClient } from "@/app/config";
-import { AddressPurpose } from "@midl-xyz/midl-js-core";
 import { WagmiMidlProvider } from "@midl-xyz/midl-js-executor-react";
 import { MidlProvider } from "@midl-xyz/midl-js-react";
 import { SatoshiKitProvider } from "@midl-xyz/satoshi-kit";
@@ -18,7 +17,7 @@ export default function Web3Provider({
 	return (
 		<QueryClientProvider client={client}>
 			<MidlProvider config={midlConfig}>
-				<SatoshiKitProvider purposes={[AddressPurpose.Ordinals]}>
+				<SatoshiKitProvider>
 					<WagmiMidlProvider>{children}</WagmiMidlProvider>
 				</SatoshiKitProvider>
 			</MidlProvider>
