@@ -9,9 +9,7 @@ export default async function deploy(hre: HardhatRuntimeEnvironment) {
 	/**
 	 * Add the deploy contract transaction intention
 	 */
-	await hre.midl.deploy("SimpleStorage", {
-		args: ["Hello from MIDL!"],
-	});
+	await hre.midl.deploy("Vault");
 
 	/**
 	 * Sends the BTC transaction and EVM transaction to the network

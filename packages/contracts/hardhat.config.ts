@@ -1,3 +1,4 @@
+import "@nomicfoundation/hardhat-verify";
 import "hardhat-deploy";
 import "@midl-xyz/hardhat-deploy";
 import { midlRegtest } from "@midl-xyz/midl-js-executor";
