@@ -30,6 +30,12 @@ You can read more about hardhat variables in the [hardhat documentation](https:/
 
 ## Deployment
 
+First, delete the `deployments` directory if it exists to ensure a clean deployment.
+
+```bash
+rm -rf ./deployments
+```
+
 The deployment script is located in `./deploy/00_Vault.ts`.
 To deploy the Vault contract run the following command: 
 
