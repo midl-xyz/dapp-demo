@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
 	Card,
 	CardContent,
@@ -8,7 +9,6 @@ import {
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Deposit, VaultInfo, Withdraw } from "@/widgets";
 import { RuneSelect } from "@/widgets/rune-select/RuneSelect";
-import Link from "next/link";
 
 export default function Home() {
 	return (
