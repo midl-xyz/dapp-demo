@@ -90,6 +90,7 @@ export const Deposit = () => {
 								<FormControl>
 									<Input
 										type="number"
+										step="any"
 										placeholder="Enter amount to deposit"
 										{...form.register("amount")}
 									/>

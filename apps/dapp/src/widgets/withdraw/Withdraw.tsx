@@ -89,6 +89,7 @@ export const Withdraw = () => {
 								<FormLabel>Withdrawal Amount</FormLabel>
 								<FormControl>
 									<Input
+										step="any"
 										type="number"
 										placeholder="Enter amount to withdraw"
 										{...form.register("amount")}
