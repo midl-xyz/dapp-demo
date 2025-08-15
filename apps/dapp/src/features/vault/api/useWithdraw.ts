@@ -32,7 +32,7 @@ export const useWithdraw = ({ mutation }: UseWithdrawParams = {}) => {
 
 	const { mutate, mutateAsync, ...rest } = useMutation({
 		mutationFn: async ({ amount, address, runeId }: UseWithdrawVariables) => {
-			const depositIntention = await addTxIntentionAsync({
+			const withdrawIntention = await addTxIntentionAsync({
 				intention: {
 					evmTransaction: {
 						to: Vault.address,
@@ -43,6 +43,7 @@ export const useWithdraw = ({ mutation }: UseWithdrawParams = {}) => {
 						}),
 					},
 				},
+				reset: true,
 			});
 
 			// Add a complete to withdraw runes to Bitcoin
@@ -60,7 +61,7 @@ export const useWithdraw = ({ mutation }: UseWithdrawParams = {}) => {
 
 			const signedTransactions: `0x${string}`[] = [];
 
-			for (const intention of [depositIntention, completeIntention]) {
+			for (const intention of [withdrawIntention, completeIntention]) {
 				const signedTransaction = await signIntentionAsync({
 					intention,
 					txId: tx.id,
