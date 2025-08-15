@@ -49,13 +49,5 @@
 		"@types/react-dom": "^19",
 		"tw-animate-css": "^1.3.6",
 		"typescript": "^5"
-	},
-	"pnpm": {
-		"overrides": {
-			"viem": "npm:@midl-xyz/midl-viem"
-		}
-	},
-	"overrides": {
-		"viem": "npm:@midl-xyz/midl-viem"
 	}
 }
