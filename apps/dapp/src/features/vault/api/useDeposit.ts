@@ -3,8 +3,8 @@ import {
 	useAddTxIntention,
 	useFinalizeBTCTransaction,
 	useSignIntention,
-} from "@midl-xyz/midl-js-executor-react";
-import { useWaitForTransaction } from "@midl-xyz/midl-js-react";
+} from "@midl/executor-react";
+import { useWaitForTransaction } from "@midl/react";
 import { type UseMutationOptions, useMutation } from "@tanstack/react-query";
 import { encodeFunctionData, erc20Abi } from "viem";
 import { usePublicClient } from "wagmi";

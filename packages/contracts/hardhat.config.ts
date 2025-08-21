@@ -1,7 +1,7 @@
 import "@nomicfoundation/hardhat-verify";
 import "hardhat-deploy";
-import "@midl-xyz/hardhat-deploy";
-import { midlRegtest } from "@midl-xyz/midl-js-executor";
+import "@midl/hardhat-deploy";
+import { midlRegtest } from "@midl/executor";
 import { type HardhatUserConfig, vars } from "hardhat/config";
 
 export default (<HardhatUserConfig>{

@@ -1,7 +1,7 @@
 import { Toaster } from "@/components/ui/sonner";
 import { Web3Provider } from "@/global";
 import { Header } from "@/widgets";
-import "@midl-xyz/satoshi-kit/styles.css";
+import "@midl/satoshi-kit/styles.css";
 import type { Metadata } from "next";
 import { Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";

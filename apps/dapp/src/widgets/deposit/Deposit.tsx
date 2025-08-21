@@ -13,7 +13,7 @@ import { Input } from "@/components/ui/input";
 import { useRuneStore } from "@/features";
 import { useDeposit } from "@/features/vault";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useERC20Rune } from "@midl-xyz/midl-js-executor-react";
+import { useERC20Rune } from "@midl/executor-react";
 import { useQueryClient } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";

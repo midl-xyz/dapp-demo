@@ -1,5 +1,5 @@
 "use client";
-import { useAccounts, useRunes } from "@midl-xyz/midl-js-react";
+import { useAccounts, useRunes } from "@midl/react";
 import { Check, ChevronsUpDown, LoaderCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
@@ -17,7 +17,7 @@ import {
 	PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { useERC20Rune } from "@midl-xyz/midl-js-executor-react";
+import { useERC20Rune } from "@midl/executor-react";
 import { zeroAddress } from "viem";
 import { useAddRune, useRuneStore } from "@/features";
 import { toast } from "sonner";

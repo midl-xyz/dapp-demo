@@ -1,7 +1,7 @@
 "use client";
 
-import { useConfig } from "@midl-xyz/midl-js-react";
-import { ConnectButton } from "@midl-xyz/satoshi-kit";
+import { useConfig } from "@midl/react";
+import { ConnectButton } from "@midl/satoshi-kit";
 import { ArrowDownUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 

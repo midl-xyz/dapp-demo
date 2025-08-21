@@ -18,11 +18,7 @@ import {
 import { useRuneStore } from "@/features";
 import { shortenAddress } from "@/shared";
 import { abi, address } from "@/shared/contracts/Vault";
-import {
-	useERC20Rune,
-	useEVMAddress,
-	useToken,
-} from "@midl-xyz/midl-js-executor-react";
+import { useERC20Rune, useEVMAddress, useToken } from "@midl/executor-react";
 import { RefreshCw } from "lucide-react";
 import Link from "next/link";
 import { type Address, formatUnits } from "viem";

@@ -1,5 +1,5 @@
-import { type Config, regtest } from "@midl-xyz/midl-js-core";
-import { createMidlConfig } from "@midl-xyz/satoshi-kit";
+import { type Config, regtest } from "@midl/core";
+import { createMidlConfig } from "@midl/satoshi-kit";
 import { QueryClient } from "@tanstack/react-query";
 
 export const midlConfig = createMidlConfig({

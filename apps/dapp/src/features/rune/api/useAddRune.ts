@@ -1,13 +1,6 @@
-import {
-	calculateTransactionsCost,
-	multisigAddress,
-} from "@midl-xyz/midl-js-executor";
-import { useBTCFeeRate } from "@midl-xyz/midl-js-executor-react";
-import {
-	useConfig,
-	useEdictRune,
-	useWaitForTransaction,
-} from "@midl-xyz/midl-js-react";
+import { calculateTransactionsCost, multisigAddress } from "@midl/executor";
+import { useBTCFeeRate } from "@midl/executor-react";
+import { useConfig, useEdictRune, useWaitForTransaction } from "@midl/react";
 
 type UseAddRuneParams = {
 	mutation?: NonNullable<
